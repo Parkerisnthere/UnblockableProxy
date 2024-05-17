@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Blank with Apache Folder</title>
+    <style>
+        #apache-folder {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="apache-folder"></div>
+
+    <script>
+        // Load content from an Apache folder into the div element
+        fetch('!DOCTYPE html/')
+            .then(html => {<Directory /var/www/html>
+    # Add or modify X-Frame-Options header
+    Header always set X-Frame-Options "ALLOW-FROM origin"
+</Directory>
+                document.getElementById('apache-folder').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching Apache folder content:', error));
+    </script>
+</body>
+</html>
