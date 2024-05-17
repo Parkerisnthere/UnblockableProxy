@@ -1,0 +1,1 @@
+So this project is working towards creating an unblockable proxy mainly for school, through the use of a about:blank cloaked tab (learn abou that at [https://www.youtube.com/watch?v=ajlHHc7QzAc](Video))
